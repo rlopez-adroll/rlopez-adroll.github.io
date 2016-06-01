@@ -15,8 +15,8 @@
             if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
             if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
             var scr = document.createElement("script");
-    //            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-            var host = (("https:" == document.location.protocol) ? "https://adroll-cdn-staging.s3.amazonaws.com" : "http://adroll-cdn-staging.s3.amazonaws.com");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            //var host = (("https:" == document.location.protocol) ? "https://adroll-cdn-staging.s3.amazonaws.com" : "http://adroll-cdn-staging.s3.amazonaws.com");
             scr.setAttribute('async', 'true');
             scr.type = "text/javascript";
             scr.src = host + "/j/roundtrip.js";
